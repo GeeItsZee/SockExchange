@@ -1,0 +1,11 @@
+name: ${project.artifactId}
+main: com.gmail.tracebachi.SockExchange.Spigot.SockExchangePlugin
+version: ${project.version}
+author: GeeItsZee (tracebachi@gmail.com)
+commands:
+  moveotherto:
+    aliases: [mot]
+  moveto:
+    aliases: [mt]
+  runcmd:
+    aliases: [rc]

@@ -1,0 +1,34 @@
+###############################################################################
+# SockExchange Configuration File (Bungee)
+###############################################################################
+
+# Settings for the SockExchange server
+SockExchangeServer:
+
+  # What port should the SockExchange server run on?
+  # It is NOT the same as the port configured for BungeeCord.
+  Port: 20000
+  # How many Netty threads should the server use for handling SockExchange connections?
+  # This number should be less than the number of servers, but not recommended less than 2.
+  # Anything more than the number of servers is a guaranteed waste of resources.
+  Threads: 2
+  # What is the password that servers should send to register with the SockExchange server?
+  # This is not an encrypted password, but it is used to prevent someone from creating a connection
+  # and sending messages as if they were a server (like /op ABadPerson).
+  Password: 'FreshSocks'
+
+# Which servers connected to your BungeeCord should be marked as private?
+PrivateServers:
+- MySuperPrivateServer
+
+# Formats for commands and messages
+Formats:
+
+  NoPerm: "&8[&c!&8] &cFailure &8[&c!&8]&7 You do not have the &f{0}&7 permission"
+  Usage: "&8[&9!&8] &9Usage &8[&9!&8]&7 &f{0}&7"
+  CommandSent: "&8[&a!&8] &aSuccess &8[&a!&8]&7 Command sent to &f{0}&7"
+  ServerNotFound: "&8[&c!&8] &cFailure &8[&c!&8]&7 Server &f{0}&7 does not exist"
+  ServerNotOnline: "&8[&c!&8] &cFailure &8[&c!&8]&7 Server &f{0}&7 is not online"
+
+# Keep it 'False' unless you want a bunch of debug information for plugin development purposes
+DebugMode: False

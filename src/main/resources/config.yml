@@ -1,0 +1,37 @@
+###############################################################################
+# SockExchange Configuration File (Spigot)
+###############################################################################
+
+# Settings for the SockExchange client
+SockExchangeClient:
+
+  # What is the hostname/IP of the SockExchange server?
+  # It is the same as the hostname/IP as your BungeeCord server
+  HostName: localhost
+  # What port is the SockExchange server running on?
+  # It is NOT the same as the port configured for BungeeCord.
+  # It should match the port set in the SockExchangeServer configuration file.
+  Port: 20000
+  # What is the name of this server?
+  # It should be the same as the name configured in Bungee.
+  # Please match the casing. 'World' is not the same as 'world'.
+  ServerName: world
+  # What is the password to send when registering with the SockExchange server?
+  # This is not an encrypted password, but it is used to prevent someone from creating a connection
+  # and sending messages as if they were a server (like /op ABadPerson).
+  Password: 'FreshSocks'
+
+# Formats for commands and messages
+Formats:
+
+  NoPerm: "&8[&c!&8] &cFailure &8[&c!&8]&7 You do not have the &f{0}&7 permission"
+  Usage: "&8[&9!&8] &9Usage &8[&9!&8]&7 &f{0}&7"
+  PlayerOnlyCommand: "&8[&c!&8] &cFailure &8[&c!&8]&7 &f{0}&7 can only be run by a player"
+  CommandSent: "&8[&a!&8] &aSuccess &8[&a!&8]&7 Command sent to &f{0}&7"
+  ServerNotFound: "&8[&c!&8] &cFailure &8[&c!&8]&7 Server &f{0}&7 does not exist"
+  ServerNotOnline: "&8[&c!&8] &cFailure &8[&c!&8]&7 Server &f{0}&7 is not online"
+  CurrentServer: "&8[&9!&8] &9Info &8[&9!&8]&7 You are on &f{0}&7"
+  OnlineServerList: "&8[&9!&8] &9Info &8[&9!&8]&7 Online servers: &f{0}&7"
+
+# Keep it 'False' unless you want a bunch of debug information for plugin development purposes
+DebugMode: False
